@@ -4,7 +4,7 @@ namespace Strebl\Inetworx;
 
 use Illuminate\Support\ServiceProvider;
 
-class SkeletonServiceProvider extends ServiceProvider
+class InetworxServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -25,7 +25,7 @@ class SkeletonServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__.'/../config/inetworx.php', 'inetworx');
 
-        $this->app->bind(InetworxClient::class, function () use ($config) {
+        $this->app->bind(InetworxClient::class, function () {
             return new InetworxClient(
                 config('inetworx.auth.credentials.auth_header.username'),
                 config('inetworx.auth.credentials.auth_header.password'),
