@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \Strebl\Inetworx\InetworxClient
  */
-class SkeletonFacade extends Facade
+class InetworxFacade extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -16,6 +16,6 @@ class SkeletonFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'inetworx';
+        return 'inetworx-client';
     }
 }
