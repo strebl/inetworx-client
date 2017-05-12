@@ -5,7 +5,7 @@ namespace Strebl\Inetworx;
 use GuzzleHttp\Client;
 use Strebl\Inetworx\Exceptions\ApiErrorException;
 
-class InetworkxClient
+class InetworxClient
 {
     /**
      * @var string
