@@ -1,0 +1,42 @@
+{
+    "name": "strebl/inetworx-client",
+    "description": "Inetworx SMS API Client",
+    "keywords": [
+        "inetworx",
+        "inetworx-client"
+    ],
+    "homepage": "https://github.com/strebl/inetworx-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Manuel Strebel",
+            "email": "manuel@strebel.xyz",
+            "homepage": "https://pi-finder.xyz",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.3",
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Strebl\\Inetworx\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Strebl\\Inetworx\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
