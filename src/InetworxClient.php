@@ -114,10 +114,10 @@ class InetworxClient
         }
 
         return [
-             'body'          => $this->responseBody($response),
-             'full_body'     => (string) $response->getBody(),
-             'statusCode'    => $response->getStatusCode(),
-             'statusMessage' => $response->getReasonPhrase(),
+             'body'      => $this->responseBody($response),
+             'full_body' => (string) $response->getBody(),
+             'status'    => $response->getStatusCode(),
+             'message'   => $response->getReasonPhrase(),
          ];
     }
 
