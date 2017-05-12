@@ -3,7 +3,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/strebl/inetworx-client.svg?style=flat-square)](https://packagist.org/packages/strebl/inetworx-client)
 [![Build Status](https://img.shields.io/travis/strebl/inetworx-client/master.svg?style=flat-square)](https://travis-ci.org/strebl/inetworx-client)
 [![StyleCI](https://styleci.io/repos/91091045/shield)](https://styleci.io/repos/91091045)
-[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/xxxxxxxxx.svg?style=flat-square)](https://insight.sensiolabs.com/projects/xxxxxxxxx)
+[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/4662f707-185d-476e-a110-0c34feb41169.svg?style=flat-square)](https://insight.sensiolabs.com/projects/4662f707-185d-476e-a110-0c34feb41169)
 [![Quality Score](https://img.shields.io/scrutinizer/g/strebl/inetworx-client.svg?style=flat-square)](https://scrutinizer-ci.com/g/strebl/inetworx-client)
 [![Total Downloads](https://img.shields.io/packagist/dt/strebl/inetworx-client.svg?style=flat-square)](https://packagist.org/packages/strebl/inetworx-client)
 
