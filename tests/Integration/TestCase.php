@@ -3,8 +3,8 @@
 namespace Strebl\Inetworx\Test\Integration;
 
 use Strebl\Inetworx\InetworxFacade;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Strebl\Inetworx\InetworxServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
 {
