@@ -73,6 +73,7 @@ class InetworxClient
             'sender'  => $fromNumber,
             'rcpt'    => $phoneNumber,
             'msgbody' => $message,
+            'coding'  => 2,
         ]);
     }
 
