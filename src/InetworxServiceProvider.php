@@ -4,7 +4,7 @@ namespace Strebl\Inetworx;
 
 use Illuminate\Support\ServiceProvider;
 
-class SkeletonServiceProvider extends ServiceProvider
+class InetworxServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
