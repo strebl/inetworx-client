@@ -17,12 +17,73 @@ You can install the package via composer:
 composer require strebl/inetworx-client
 ```
 
+
+## Laravel
+
+If you are using Laravel, you can register the service provider:
+
+```php
+'providers' => [
+    // ...
+    Strebl\Inetworx\InetworxServiceProvider::class,
+];
+```
+
+To publish the config file to `config/inetworx.php` run (optional):
+
+```bash
+php artisan vendor:publish --provider="Strebl\Inetworx\InetworxServiceProvider"
+```
+
+If you are using Laravel, you can register the service provider:
+
+```php
+'aliases' => [
+    // ...
+    'Inetworx' => Strebl\Inetworx\InetworxFacade::class,
+];
+```
+
+Set the environment variables with the correct values:
+
+```
+INETWORX_AUTH_HEADER_USERNAME=null
+INETWORX_AUTH_HEADER_PASSWORD=null
+
+INETWORX_API_USERNAME=null
+INETWORX_API_PASSWORD=null
+```
+
+
+
 ## Usage
 
+### With Laravel
+
 ``` php
-$skeleton = new Strebl\Inetworx();
-echo $skeleton->echoPhrase('Hello, Spatie!');
+$skeleton = app(Strebl\Inetworx::class);
+$sms->send($phoneNumber, 'Hello, Manuel!', $senderPhoneNumber);
 ```
+
+Or you can use the Facade:
+
+``` php
+\Inetworx::send($phoneNumber, 'Hello, Manuel!', $senderPhoneNumber);
+```
+
+### Without Laravel
+
+``` php
+$sms = new Strebl\Inetworx(
+    $authHeaderUsername,
+    $authHeaderPassword,
+    $apiUsername,
+    $apiPassword,
+);
+$sms->send($phoneNumber, 'Hello, Manuel!', $senderPhoneNumber);
+```
+
+
 
 ## Changelog
 
