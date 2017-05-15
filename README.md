@@ -83,7 +83,17 @@ $sms = new Strebl\Inetworx(
 $sms->send($phoneNumber, 'Hello, Manuel!', $senderPhoneNumber);
 ```
 
+### Send a SMS
 
+``` php
+$sms->send($to, $message, $from);
+```
+
+### Get the remaining SMS credits
+
+``` php
+$sms->credit();
+```
 
 ## Changelog
 
